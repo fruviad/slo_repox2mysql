@@ -1,0 +1,11 @@
+analyze table dataSourceState;
+analyze table metadataSchemaVersions;
+analyze table metadataSchemas;
+analyze table metadataTransformation;
+analyze table oldTasks;
+analyze table provider;
+analyze table providerContact;
+analyze table recordcount;
+analyze table scheduledTasks;
+analyze table source;
+analyze table xyzzy;
