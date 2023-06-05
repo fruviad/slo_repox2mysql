@@ -41,8 +41,7 @@ insert into metadataTransformation (
      stylesheet,
      sourceSchema,
      destSchema,
-     destNamespace,
-     bMRDCompliant
+     destNamespace
      )
  values (
      '<xsl:value-of select="*:id"/>',
@@ -54,8 +53,7 @@ insert into metadataTransformation (
      '<xsl:value-of select="*:stylesheet"/>', 
      '<xsl:value-of select="*:sourceSchema"/>',
      '<xsl:value-of select="*:destSchema"/>',
-     '<xsl:value-of select="*:destNamespace"/>',
-     '<xsl:value-of select="*:bMRDCompliant"/>'
+     '<xsl:value-of select="*:destNamespace"/>'
      );
 
   </xsl:template>

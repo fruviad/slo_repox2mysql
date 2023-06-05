@@ -33,7 +33,6 @@
     <!-- <xsl:copy-of select="." copy-namespaces='false' /> -->
 insert into source (
      providerName,
-     metadataFormat,
      sourceSchema,
      lastIngest,
      status,
@@ -43,7 +42,8 @@ insert into source (
      recordIdPolicyType,
      oaiSource,
      oaiSet,
-     metadataTransformations,
+     metadataPrefix,
+     odnSet,
      sourcesDirPath,
      retrieveStrategy,
      fileExtract,
@@ -51,7 +51,6 @@ insert into source (
      )
  values (
      '<xsl:value-of select="../*:name"/>',
-     '<xsl:value-of select="@metadataFormat"/>',
      '<xsl:value-of select="@schema"/>',
      '<xsl:value-of select="@lastIngest"/>', 
      '<xsl:value-of select="@status"/>',
@@ -61,6 +60,7 @@ insert into source (
      '<xsl:value-of select="*:recordIdPolicy/@type"/>',
      '<xsl:value-of select="*:oai-source"/>',
      '<xsl:value-of select="*:oai-set"/>',
+     '<xsl:value-of select="@metadataFormat"/>',
      '<xsl:apply-templates select="*:metadataTransformations"/>',
      '<xsl:value-of select="*:sourcesDirPath"/>',
      '<xsl:value-of select="*:retrieveStrategy/@type"/>',
