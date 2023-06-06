@@ -193,7 +193,6 @@ DROP TABLE IF EXISTS `source`;
 CREATE TABLE `source` (
   `localkey` int NOT NULL AUTO_INCREMENT,
   `providerName` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `metadataFormat` varchar(24) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `sourceSchema` varchar(2048) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `lastIngest` varchar(64) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `status` varchar(2048) COLLATE utf8mb4_general_ci DEFAULT NULL,
@@ -203,7 +202,8 @@ CREATE TABLE `source` (
   `recordIdPolicyType` varchar(64) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `oaiSource` varchar(512) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `oaiSet` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `metadataTransformations` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `metadataPrefix` varchar (30) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `odnSet` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `sourcesDirPath` varchar(1024) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `retrieveStrategy` varchar(64) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `fileExtract` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
