@@ -45,5 +45,5 @@ java net.sf.saxon.Transform -xsl:lib/create-scheduledTasks-SQL.xsl  -o:output/cr
 java net.sf.saxon.Transform -xsl:lib/create-source-SQL.xsl          -o:output/create-source.sql          -s:$REPOX_CONFIG_DIR/dataProviders.xml
 
 
-
+echo "Complete.  There are scripts in the 'lib' directory to run the SQL."
 
