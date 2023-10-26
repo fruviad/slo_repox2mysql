@@ -35,13 +35,11 @@ insert into scheduledTasks (
      id,
      scheduledTaskTime,
      frequencyType,
-     runnableClass,
      parameters )
  values (
      '<xsl:value-of select="./@id"/>',
      '<xsl:value-of select="*:time"/>',
      '<xsl:value-of select="*:frequency/@type"/>', 
-     '<xsl:value-of select="*:runnable/@class"/>',
      '<xsl:value-of select="*:parameters/*:parameter" separator="; "/>'
       );
 

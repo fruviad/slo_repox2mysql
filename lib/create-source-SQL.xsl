@@ -38,15 +38,12 @@ insert into source (
      status,
      typeOfSource,
      description,
-     exportDirPath,
-     recordIdPolicyType,
      oaiSource,
      oaiSet,
      metadataPrefix,
      odnSet,
      sourcesDirPath,
      retrieveStrategy,
-     fileExtract,
      splitRecordsRecordXPath
      )
  values (
@@ -56,15 +53,12 @@ insert into source (
      '<xsl:value-of select="@status"/>',
      '<xsl:value-of select="@type"/>',
      '<xsl:apply-templates select="*:description"/>', 
-     '<xsl:value-of select="*:exportDirPath"/>',
-     '<xsl:value-of select="*:recordIdPolicy/@type"/>',
      '<xsl:value-of select="*:oai-source"/>',
      '<xsl:value-of select="*:oai-set"/>',
      '<xsl:value-of select="@metadataFormat"/>',
      '<xsl:apply-templates select="*:metadataTransformations"/>',
      '<xsl:value-of select="*:sourcesDirPath"/>',
      '<xsl:value-of select="*:retrieveStrategy/@type"/>',
-     '<xsl:value-of select="*:fileExtract"/>',
      '<xsl:value-of select="*:splitRecords/*:recordXPath"/>'
      );
 
