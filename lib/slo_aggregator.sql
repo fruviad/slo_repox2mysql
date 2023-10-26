@@ -196,8 +196,6 @@ CREATE TABLE `source` (
   `status` varchar(2048) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `typeOfSource` varchar(64) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `description` varchar(1024) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `exportDirPath` varchar(1024) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `recordIdPolicyType` varchar(64) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `oaiSource` varchar(512) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `oaiSet` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `metadataPrefix` varchar (30) COLLATE utf8mb4_general_ci DEFAULT NULL,
