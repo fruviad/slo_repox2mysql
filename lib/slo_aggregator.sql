@@ -246,18 +246,6 @@ CREATE TABLE `setRights` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4373 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Table structure for table `xyzzy`
---
-
-DROP TABLE IF EXISTS `xyzzy`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `xyzzy` (
-  `localkey` int NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`localkey`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
