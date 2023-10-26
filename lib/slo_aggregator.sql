@@ -204,7 +204,6 @@ CREATE TABLE `source` (
   `odnSet` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `sourcesDirPath` varchar(1024) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `retrieveStrategy` varchar(64) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `fileExtract` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `splitRecordsRecordXPath` varchar(64) COLLATE utf8mb4_general_ci DEFAULT NULL,
   PRIMARY KEY (`localkey`),
   UNIQUE (`odnSet`)
