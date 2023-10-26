@@ -241,7 +241,7 @@ DROP TABLE IF EXISTS `setRights`;
 CREATE TABLE `setRights` (
   `localkey` int NOT NULL AUTO_INCREMENT,
   `odnSet` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `uri` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL
+  `uri` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
   PRIMARY KEY (`localkey`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4373 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
