@@ -24,7 +24,7 @@ then
     exit
 fi
 
-
+echo "OK...this will take a moment."
 
 REPOX_CONFIG_DIR=$1
 
