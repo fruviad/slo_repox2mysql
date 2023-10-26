@@ -8,4 +8,3 @@ analyze table providerContact;
 analyze table recordcount;
 analyze table scheduledTasks;
 analyze table source;
-analyze table xyzzy;
