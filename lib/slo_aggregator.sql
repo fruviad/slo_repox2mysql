@@ -84,7 +84,6 @@ CREATE TABLE `metadataTransformation` (
   `sourceSchema` varchar(2048) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `destSchema` varchar(2048) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `destNamespace` varchar(2048) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `bMRDCompliant` varchar(48) COLLATE utf8mb4_general_ci DEFAULT NULL,
   PRIMARY KEY (`localkey`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5088 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -177,7 +176,6 @@ CREATE TABLE `scheduledTasks` (
   `id` varchar(64) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `scheduledTaskTime` datetime DEFAULT NULL,
   `frequencyType` varchar(16) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `runnableClass` varchar(128) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `parameters` varchar(128) COLLATE utf8mb4_general_ci DEFAULT NULL,
   PRIMARY KEY (`localkey`)
 ) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
