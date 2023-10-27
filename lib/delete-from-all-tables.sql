@@ -8,7 +8,6 @@ delete from providerContact;
 delete from recordcount;
 delete from scheduledTasks;
 delete from source;
-delete from xyzzy;
 
 source lib/analyze-tables.sql;
 
