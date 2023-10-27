@@ -76,7 +76,7 @@ CREATE TABLE `metadataTransformation` (
   `localkey` int NOT NULL AUTO_INCREMENT,
   `editable` varchar(48) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `version` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `idRepox` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `odnSet` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `description` varchar(48) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `sourceFormat` varchar(2048) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `destinationFormat` varchar(2048) COLLATE utf8mb4_general_ci DEFAULT NULL,

@@ -32,7 +32,7 @@
   <xsl:template match="//*:metadataTransformation">
     <!-- <xsl:copy-of select="." copy-namespaces='false' /> -->
 insert into metadataTransformation (
-     idRepox,
+     odnSet,
      editable,
      version,
      description,
