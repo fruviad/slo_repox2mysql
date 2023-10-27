@@ -25,7 +25,7 @@ DROP TABLE IF EXISTS `dataSourceState`;
 CREATE TABLE `dataSourceState` (
   `localkey` int NOT NULL AUTO_INCREMENT,
   `stateTimestamp` datetime DEFAULT NULL,
-  `dataSourceId` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `odnSet` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `state` varchar(10) COLLATE utf8mb4_general_ci DEFAULT NULL,
   PRIMARY KEY (`localkey`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4373 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -154,7 +154,7 @@ DROP TABLE IF EXISTS `recordcount`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `recordcount` (
   `localkey` int NOT NULL AUTO_INCREMENT,
-  `dataSourceId` varchar(48) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `odnSet` varchar(48) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `recordCount` int DEFAULT NULL,
   `lastLineCounted` int DEFAULT NULL,
   `deletedRecords` int DEFAULT NULL,

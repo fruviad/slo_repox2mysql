@@ -32,7 +32,7 @@
   <xsl:template match="//*:recordcount">
     <!-- <xsl:copy-of select="." copy-namespaces='false' /> -->
 insert into recordcount (
-     dataSourceId,
+     odnSet,
      recordCount,
      lastLineCounted,
      deletedRecords,

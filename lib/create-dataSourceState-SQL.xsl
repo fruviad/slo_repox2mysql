@@ -32,7 +32,7 @@
   <xsl:template match="*:dataSourceState">
 insert into dataSourceState (
      stateTimestamp,
-     dataSourceId,
+     odnSet,
      state
      )
  values (
