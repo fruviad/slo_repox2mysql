@@ -99,7 +99,7 @@ CREATE TABLE `oldTasks` (
   `localkey` int NOT NULL AUTO_INCREMENT,
   `id` varchar(128) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `oldTaskTime` datetime DEFAULT NULL,
-  `dataSourceSet` varchar(64) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `odnSet` varchar(64) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `logName` varchar(512) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `ingestType` varchar(48) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `status` varchar(512) COLLATE utf8mb4_general_ci DEFAULT NULL,

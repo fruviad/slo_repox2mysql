@@ -34,7 +34,7 @@
 insert into oldTasks (
      id,
      oldTaskTime,
-     dataSourceSet,
+     odnSet,
      logName,
      ingestType,
      status,
