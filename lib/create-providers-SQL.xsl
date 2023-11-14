@@ -34,7 +34,7 @@
 insert into provider (
      name,
      description,
-     odnSet
+     odnProvider
      )
  values (
      '<xsl:value-of select="*:name"/>',
