@@ -122,7 +122,7 @@ CREATE TABLE `provider` (
   `localkey` int NOT NULL AUTO_INCREMENT,
   `name` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `description` varchar(2048) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `idRepox` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `odnSet` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
   PRIMARY KEY (`localkey`)
 ) ENGINE=InnoDB AUTO_INCREMENT=519 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
