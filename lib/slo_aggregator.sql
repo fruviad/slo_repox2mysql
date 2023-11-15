@@ -203,6 +203,7 @@ CREATE TABLE `source` (
   `sourcesDirPath` varchar(1024) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `retrieveStrategy` varchar(64) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `splitRecordsRecordXPath` varchar(64) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `sourceCMS` varchar(64) COLLATE utf8mb4_general_ci DEFAULT NULL,
   PRIMARY KEY (`localkey`),
   UNIQUE (`odnSet`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4398 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
