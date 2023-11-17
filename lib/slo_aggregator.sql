@@ -158,6 +158,7 @@ CREATE TABLE `recordcount` (
   `recordCount` int DEFAULT NULL,
   `lastLineCounted` int DEFAULT NULL,
   `deletedRecords` int DEFAULT NULL,
+  `iiifViable` int DEFAULT NULL,
   `lastCountDate` datetime DEFAULT NULL,
   `lastCountWithChangesDate` datetime DEFAULT NULL,
   PRIMARY KEY (`localkey`)
@@ -179,6 +180,21 @@ CREATE TABLE `scheduledTasks` (
   `parameters` varchar(128) COLLATE utf8mb4_general_ci DEFAULT NULL,
   PRIMARY KEY (`localkey`)
 ) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `setRights`
+--
+
+DROP TABLE IF EXISTS `setRights`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `setRights` (
+  `localkey` int NOT NULL AUTO_INCREMENT,
+  `odnSet` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `uri` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  PRIMARY KEY (`localkey`)
+) ENGINE=InnoDB AUTO_INCREMENT=4373 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -226,21 +242,6 @@ CREATE TABLE `username` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
-
---
--- Table structure for table `setRights`
---
-
-DROP TABLE IF EXISTS `setRights`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `setRights` (
-  `localkey` int NOT NULL AUTO_INCREMENT,
-  `odnSet` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `uri` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  PRIMARY KEY (`localkey`)
-) ENGINE=InnoDB AUTO_INCREMENT=4373 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
 
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
