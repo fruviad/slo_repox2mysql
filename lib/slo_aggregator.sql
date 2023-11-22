@@ -220,7 +220,7 @@ CREATE TABLE `source` (
   `retrieveStrategy` varchar(64) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `splitRecordsRecordXPath` varchar(64) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `sourceCMS` varchar(64) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `iiifParticipant` int DEFAULT NULL,
+  `iiifParticipant` varchar(2) COLLATE utf8mb4_general_ci DEFAULT NULL,
   PRIMARY KEY (`localkey`),
   UNIQUE (`odnSet`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4398 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
