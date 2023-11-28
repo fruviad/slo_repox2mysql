@@ -7,7 +7,9 @@ delete from provider;
 delete from providerContact;
 delete from recordcount;
 delete from scheduledTasks;
+delete from setRights;
 delete from source;
+delete from username;
 
 source lib/analyze-tables.sql;
 
